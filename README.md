@@ -23,7 +23,7 @@ The datasets path is:
 Additionally, custom datasets with target difficulty levels can be generated using our open-sourced `SAT_Construction` tool (See Step 1 below).
 
 # Models
-- **Download:**  https://zenodo.org/records/TODO
+- **Download:** <https://zenodo.org/records/15487151>
 
 # 🧱 Installation
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 Run the following script:
 
 ```bash
-./src/Build_SAT_Datasets/build_sat_dataset.sh
+sh ./src/Build_SAT_Datasets/build_sat_dataset.sh
 ````
 
 Edit the following variables in the script to configure difficulty and number of samples:
@@ -64,7 +64,10 @@ Training scripts are located in:
 scripts/train
 ```
 
-We provide separate scripts for both the **1.5B** and **7B** models. Each stage of training is isolated for better observability and debugging.
+We provide separate scripts for both the **1.5B** and **7B** models. Each stage of training is isolated for better observability and debugging. For example:
+```
+sh ./scripts/train/grpo_1.5B_355.sh
+```
 
 ### 🔧 Required Arguments
 
@@ -72,7 +75,7 @@ Before running the script, please modify the following parameters:
 
 ```bash
 --pretrain /xxx/Qwen \
---save_path /xxx/ \
+--save_path xxx \
 --use_wandb xxx \
 --wandb_run_name xxx \
 --ckpt_path xxx/checkpoints \
@@ -88,7 +91,7 @@ For more detailed argument configurations, please refer to the [OpenRLHF documen
 Run:
 
 ```bash
-./scripts/test/test_SAT.sh
+sh ./scripts/test/test_SAT.sh
 ```
 
 Edit the first two lines in the script before running:
@@ -106,7 +109,7 @@ We use Docker + vLLM to deploy models. You should modify Docker parameters like 
 Run:
 
 ```bash
-./scripts/test/test_model_math_programming.sh
+sh ./scripts/test/test_model_math_programming.sh
 ```
 
 Modify the third line:
@@ -125,7 +128,7 @@ Other arguments follow [lighteval](https://github.com/huggingface/lighteval) con
 To generate a word cloud, uncomment line 39 in:
 
 ```bash
-./scripts/test/test_model.sh
+sh ./scripts/test/test_model.sh
 ```
 
 ```bash
@@ -155,6 +158,7 @@ This project reuses code from the following repositories:
 * [open-r1](https://github.com/huggingface/open-r1)
 
 # 📜 Citation
+
 ```
 
 ```
