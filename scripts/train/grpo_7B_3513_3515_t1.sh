@@ -1,0 +1,49 @@
+#!/bin/bash
+
+python src/OpenRLHF/openrlhf/cli/train_ppo_ray.py \
+        --ref_num_nodes 1 \
+        --ref_num_gpus_per_node 2 \
+        --actor_num_nodes 1 \
+        --actor_num_gpus_per_node 2 \
+        --ref_reward_offload \
+        --vllm_num_engines 2 \
+        --vllm_tensor_parallel_size 2 \
+        --vllm_gpu_memory_utilization 0.6 \
+        --vllm_sync_backend nccl \
+        --vllm_enable_sleep \
+        --flash_attn \
+        --pretrain /xxx/Qwen \
+        --remote_rm_url src/reward_function/reward_func.py \
+        --save_path /xxx/Qwen_7b_3513_3515_t1 \
+        --micro_train_batch_size 1 \
+        --train_batch_size 2 \
+        --micro_rollout_batch_size 1 \
+        --n_samples_per_prompt 8 \
+        --rollout_batch_size 2 \
+        --apply_chat_template \
+        --max_samples 100000 \
+        --max_epochs 1 \
+        --prompt_max_len 1024 \
+        --generate_max_len 8192 \
+        --temperature 1 \
+        --zero_stage 3 \
+        --bf16 \
+        --actor_learning_rate 4e-7 \
+        --init_kl_coef 1e-3 \
+        --gamma 1.0 \
+        --use_kl_loss \
+        --kl_estimator k3 \
+        --advantage_estimator group_norm \
+        --prompt_data data/train/Train_prompt_3_5_15_520 \
+        --input_key prompt \
+        --label_key clause \
+        --normalize_reward \
+        --packing_samples \
+        --adam_offload \
+        --gradient_checkpointing \
+        --use_wandb xxx \
+        --wandb_run_name xxx \
+        --ckpt_path xxx/checkpoints \
+        --save_steps 250 \
+        --eval_steps 250 \
+        --max_ckpt_num 20000

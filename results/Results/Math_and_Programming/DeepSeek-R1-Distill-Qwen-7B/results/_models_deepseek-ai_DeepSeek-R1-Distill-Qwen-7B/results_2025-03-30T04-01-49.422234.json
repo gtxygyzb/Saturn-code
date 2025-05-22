@@ -1,0 +1,115 @@
+{
+  "config_general": {
+    "lighteval_sha": "9c05a83ad795e37efdc89ac60943f6623b9ae633",
+    "num_fewshot_seeds": 1,
+    "override_batch_size": -1,
+    "max_samples": null,
+    "job_id": 0,
+    "start_time": 9742458.714569036,
+    "end_time": 9743703.731114961,
+    "total_evaluation_time_secondes": "1245.0165459252894",
+    "model_name": "_models_deepseek-ai_DeepSeek-R1-Distill-Qwen-7B",
+    "model_sha": "",
+    "model_dtype": null,
+    "model_size": null,
+    "generation_parameters": {
+      "early_stopping": null,
+      "repetition_penalty": null,
+      "frequency_penalty": null,
+      "length_penalty": null,
+      "presence_penalty": null,
+      "max_new_tokens": 16384,
+      "min_new_tokens": null,
+      "seed": null,
+      "stop_tokens": null,
+      "temperature": 0.6,
+      "top_k": null,
+      "min_p": null,
+      "top_p": 0.95,
+      "truncate_prompt": null,
+      "response_format": null
+    }
+  },
+  "results": {
+    "custom|gpqa:diamond|0": {
+      "extractive_match": 0.4898989898989899,
+      "extractive_match_stderr": 0.035616254886737454
+    },
+    "all": {
+      "extractive_match": 0.4898989898989899,
+      "extractive_match_stderr": 0.035616254886737454
+    }
+  },
+  "versions": {
+    "custom|gpqa:diamond|0": 1
+  },
+  "config_tasks": {
+    "custom|gpqa:diamond": {
+      "name": "gpqa:diamond",
+      "prompt_function": "gpqa_prompt_fn",
+      "hf_repo": "Idavidrein/gpqa",
+      "hf_subset": "gpqa_diamond",
+      "metric": [
+        {
+          "metric_name": "extractive_match",
+          "higher_is_better": true,
+          "category": "3",
+          "use_case": "1",
+          "sample_level_fn": "sample_level_fn",
+          "corpus_level_fn": "mean"
+        }
+      ],
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "train"
+      ],
+      "trust_dataset": true,
+      "evaluation_splits": [
+        "train"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": 32768,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "suite": [
+        "custom"
+      ],
+      "original_num_docs": 198,
+      "effective_num_docs": 198,
+      "must_remove_duplicate_docs": false,
+      "version": 1
+    }
+  },
+  "summary_tasks": {
+    "custom|gpqa:diamond|0": {
+      "hashes": {
+        "hash_examples": "50ecb6f5d091bd95",
+        "hash_full_prompts": "f27d3d556ab1c377",
+        "hash_input_tokens": "2feb29bf3801b58a",
+        "hash_cont_tokens": "6a105ac895c797a7"
+      },
+      "truncated": 0,
+      "non_truncated": 198,
+      "padded": 0,
+      "non_padded": 198,
+      "effective_few_shots": 0.0,
+      "num_truncated_few_shots": 0
+    }
+  },
+  "summary_general": {
+    "hashes": {
+      "hash_examples": "a9318dbdd867770b",
+      "hash_full_prompts": "122c405ea50f3de4",
+      "hash_input_tokens": "a263b8e88b1dea74",
+      "hash_cont_tokens": "38c99a574ff0b712"
+    },
+    "truncated": 0,
+    "non_truncated": 198,
+    "padded": 0,
+    "non_padded": 198,
+    "num_truncated_few_shots": 0
+  }
+}

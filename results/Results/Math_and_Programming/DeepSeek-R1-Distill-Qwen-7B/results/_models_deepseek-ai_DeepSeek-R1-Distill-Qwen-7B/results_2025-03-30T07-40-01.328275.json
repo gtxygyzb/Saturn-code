@@ -1,0 +1,115 @@
+{
+  "config_general": {
+    "lighteval_sha": "9c05a83ad795e37efdc89ac60943f6623b9ae633",
+    "num_fewshot_seeds": 1,
+    "override_batch_size": -1,
+    "max_samples": null,
+    "job_id": 0,
+    "start_time": 9743723.622062877,
+    "end_time": 9756794.81373698,
+    "total_evaluation_time_secondes": "13071.19167410396",
+    "model_name": "_models_deepseek-ai_DeepSeek-R1-Distill-Qwen-7B",
+    "model_sha": "",
+    "model_dtype": null,
+    "model_size": null,
+    "generation_parameters": {
+      "early_stopping": null,
+      "repetition_penalty": null,
+      "frequency_penalty": null,
+      "length_penalty": null,
+      "presence_penalty": null,
+      "max_new_tokens": 16384,
+      "min_new_tokens": null,
+      "seed": null,
+      "stop_tokens": null,
+      "temperature": 0.6,
+      "top_k": null,
+      "min_p": null,
+      "top_p": 0.95,
+      "truncate_prompt": null,
+      "response_format": null
+    }
+  },
+  "results": {
+    "extended|lcb:codegeneration|0": {
+      "codegen_pass@1:4": 0.353544776119403,
+      "codegen_pass@1:4_stderr": 0.02608512910246853
+    },
+    "all": {
+      "codegen_pass@1:4": 0.353544776119403,
+      "codegen_pass@1:4_stderr": 0.02608512910246853
+    }
+  },
+  "versions": {
+    "extended|lcb:codegeneration|0": 0
+  },
+  "config_tasks": {
+    "extended|lcb:codegeneration": {
+      "name": "lcb:codegeneration",
+      "prompt_function": "lcb_codegeneration_prompt_fn",
+      "hf_repo": "livecodebench/code_generation_lite",
+      "hf_subset": "v4_v5",
+      "metric": [
+        {
+          "metric_name": "codegen_pass@1:4",
+          "higher_is_better": true,
+          "category": "5",
+          "use_case": "6",
+          "sample_level_fn": "codegen_metric",
+          "corpus_level_fn": "mean"
+        }
+      ],
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "test"
+      ],
+      "trust_dataset": true,
+      "evaluation_splits": [
+        "test"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": 16384,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "suite": [
+        "extended"
+      ],
+      "original_num_docs": 268,
+      "effective_num_docs": 268,
+      "must_remove_duplicate_docs": false,
+      "version": 0
+    }
+  },
+  "summary_tasks": {
+    "extended|lcb:codegeneration|0": {
+      "hashes": {
+        "hash_examples": "ecc02ff275410b52",
+        "hash_full_prompts": "54c79c85387f79eb",
+        "hash_input_tokens": "c9b3c5ec91511267",
+        "hash_cont_tokens": "d0d6ae5c875f71df"
+      },
+      "truncated": 0,
+      "non_truncated": 268,
+      "padded": 0,
+      "non_padded": 268,
+      "effective_few_shots": 0.0,
+      "num_truncated_few_shots": 0
+    }
+  },
+  "summary_general": {
+    "hashes": {
+      "hash_examples": "f850b9be453f7d4f",
+      "hash_full_prompts": "51901899cfc8030e",
+      "hash_input_tokens": "dd5902dd810391e1",
+      "hash_cont_tokens": "3f8ad360a651282e"
+    },
+    "truncated": 0,
+    "non_truncated": 268,
+    "padded": 0,
+    "non_padded": 268,
+    "num_truncated_few_shots": 0
+  }
+}

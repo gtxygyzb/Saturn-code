@@ -1,0 +1,7 @@
+accelerate==1.0.0
+deepspeed==0.15.2
+lighteval
+ray==2.44.0
+torch==2.5.1
+transformers==4.49.0
+vllm==0.7.2
