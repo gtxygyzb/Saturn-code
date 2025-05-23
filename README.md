@@ -1,6 +1,6 @@
 # **SATURN**: SAT-based Reinforcement Learning to Unleash Language Model Reasoning
 
-[![arXiv](https://img.shields.io/badge/arXiv-2405.12345-b31b1b.svg)](https://arxiv.org/abs/2405.12345)
+[![arXiv](https://img.shields.io/badge/arXiv-2405.12345-b31b1b.svg)](https://arxiv.org/abs/2505.16368)
 [![Hugging Face](https://img.shields.io/badge/Hugging_Face-gtxygyzb/Saturn--7B-yellow.svg)](https://huggingface.co/gtxygyzb/Saturn-7B)
 [![Hugging Face](https://img.shields.io/badge/Hugging_Face-gtxygyzb/Saturn--1.5B-yellow.svg)](https://huggingface.co/gtxygyzb/Saturn-1.5B)
 
