@@ -153,7 +153,6 @@ python ./experiments/draw_pic/draw_difficulty.py
 
 Figures will be saved in `./experiments/draw_pic/`.
 
-
 # 🤝 Acknowledgements
 
 This project reuses code from the following repositories:
