@@ -1,5 +1,10 @@
 # **SATURN**: SAT-based Reinforcement Learning to Unleash Language Model Reasoning
 
+[![arXiv](https://img.shields.io/badge/arXiv-2405.12345-b31b1b.svg)](https://arxiv.org/abs/2405.12345)
+[![Hugging Face](https://img.shields.io/badge/Hugging_Face-gtxygyzb/Saturn--7B-yellow.svg)](https://huggingface.co/gtxygyzb/Saturn-7B)
+[![Hugging Face](https://img.shields.io/badge/Hugging_Face-gtxygyzb/Saturn--1.5B-yellow.svg)](https://huggingface.co/gtxygyzb/Saturn-1.5B)
+
+
 We propose **SATURN**, a SAT-based RL framework that uses Boolean Satisfiability (SAT) problems to train and evaluate LLM reasoning. **SATURN** enables scalable task construction, rule-based verification, and precise difficulty control. **SATURN** designs a curriculum learning pipeline that continuously improves LLMs' reasoning capability by constructing SAT tasks of increasing difficulty and training LLMs from easy to hard. To ensure stable training, we design a principled mechanism to control difficulty transitions.
 
 We introduce **SATURN-2.6K**, a dataset of 2,660 SAT problems with varying difficulty. It supports the evaluation of how LLM reasoning changes with problem difficulty. We apply **SATURN** to DeepSeek-R1-Distill-Qwen and obtain **SATURN-1.5B** and **SATURN-7B**.
@@ -24,6 +29,7 @@ Additionally, custom datasets with target difficulty levels can be generated usi
 
 # Models
 - **Download:** <https://zenodo.org/records/15487151>
+- **Hugging Face:** [Saturn-7B](https://huggingface.co/gtxygyzb/Saturn-7B), [Saturn-1.5B](https://huggingface.co/gtxygyzb/Saturn-1.5B)
 
 # 🧱 Installation
 
