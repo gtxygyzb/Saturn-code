@@ -170,7 +170,7 @@ This project reuses code from the following repositories:
   title        = {SATURN: SAT-based Reinforcement Learning to Unleash Language Model Reasoning},
   journal      = {CoRR},
   volume       = {abs/2505.16368},
-  year={2025},
+  year         = {2025},
 }
 ```
 
