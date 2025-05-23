@@ -165,7 +165,15 @@ This project reuses code from the following repositories:
 # 📜 Citation
 
 ```
-
+@misc{saturn2025,
+  title={SATURN: SAT-based Reinforcement Learning to Unleash Language Model Reasoning},
+  author={Huanyu Liu and Jia Li and Hao Zhu and Kechi Zhang and Yihong Dong and Ge Li},
+  year={2025},
+  eprint={2505.16368},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2505.16368},
+}
 ```
 
 # 📄 License
