@@ -171,7 +171,6 @@ This project reuses code from the following repositories:
   year={2025},
   eprint={2505.16368},
   archivePrefix={arXiv},
-  primaryClass={cs.LG},
   url={https://arxiv.org/abs/2505.16368},
 }
 ```
