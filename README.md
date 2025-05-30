@@ -39,6 +39,8 @@ To install the required dependencies, run:
 conda create -n saturn python=3.10.12
 conda activate saturn
 pip install -r requirements.txt
+cd src/OpenRLHF
+pip install -e .
 ```
 
 # 🛠️ Usage Guide
