@@ -1,9 +1,10 @@
-# **SATURN**: SAT-based Reinforcement Learning to Unleash Language Model Reasoning
+# **SATURN**: SAT-based Reinforcement Learning to Unleash LLMs Reasoning
 
-[![arXiv](https://img.shields.io/badge/arXiv-2405.16368-b31b1b.svg)](https://arxiv.org/abs/2505.16368)
+[![arXiv](https://img.shields.io/badge/arXiv-2505.16368-b31b1b.svg)](https://arxiv.org/abs/2505.16368)
 [![Hugging Face](https://img.shields.io/badge/Hugging_Face-gtxygyzb/Saturn--7B-yellow.svg)](https://huggingface.co/gtxygyzb/Saturn-7B)
 [![Hugging Face](https://img.shields.io/badge/Hugging_Face-gtxygyzb/Saturn--1.5B-yellow.svg)](https://huggingface.co/gtxygyzb/Saturn-1.5B)
 
+🏆🏆Our paper has been accepted as a **Spotlight** presentation at **NeurIPS 2025**.🏆🏆
 
 We propose **SATURN**, a SAT-based RL framework that uses Boolean Satisfiability (SAT) problems to train and evaluate LLM reasoning. **SATURN** enables scalable task construction, rule-based verification, and precise difficulty control. **SATURN** designs a curriculum learning pipeline that continuously improves LLMs' reasoning capability by constructing SAT tasks of increasing difficulty and training LLMs from easy to hard. To ensure stable training, we design a principled mechanism to control difficulty transitions.
 
@@ -167,12 +168,23 @@ This project reuses code from the following repositories:
 # 📜 Citation
 
 ```
-@article{saturn2025,
-  author       = {Huanyu Liu and Jia Li and Hao Zhu and Kechi Zhang and Yihong Dong and Ge Li},
-  title        = {SATURN: SAT-based Reinforcement Learning to Unleash Language Model Reasoning},
-  journal      = {CoRR},
-  volume       = {abs/2505.16368},
-  year         = {2025},
+@inproceedings{liu2025saturn,
+      title={SATURN: SAT-based Reinforcement Learning to Unleash LLMs Reasoning},
+      author={Huanyu Liu and Ge Li and Jia Li and Hao Zhu and Kechi Zhang and Yihong Dong},
+      booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+      year={2025},
+}
+```
+
+```
+@misc{liu2025saturnsatbasedreinforcementlearning,
+      title={SATURN: SAT-based Reinforcement Learning to Unleash LLMs Reasoning}, 
+      author={Huanyu Liu and Ge Li and Jia Li and Hao Zhu and Kechi Zhang and Yihong Dong},
+      year={2025},
+      eprint={2505.16368},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2505.16368}, 
 }
 ```
 
