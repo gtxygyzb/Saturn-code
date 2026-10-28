@@ -1,0 +1,153 @@
+{
+  "config_general": {
+    "lighteval_sha": "?",
+    "num_fewshot_seeds": 1,
+    "max_samples": null,
+    "job_id": "0",
+    "start_time": 9064554.630019283,
+    "end_time": 9065042.591943873,
+    "total_evaluation_time_secondes": "487.9619245901704",
+    "model_config": {
+      "model_name": "/root/Saturn-code/models/DeepSeek-R1-Distill-Qwen-7B",
+      "generation_parameters": {
+        "num_blocks": null,
+        "block_size": null,
+        "early_stopping": null,
+        "repetition_penalty": null,
+        "frequency_penalty": null,
+        "length_penalty": null,
+        "presence_penalty": null,
+        "max_new_tokens": 16384,
+        "min_new_tokens": null,
+        "seed": null,
+        "stop_tokens": null,
+        "temperature": 0.6,
+        "top_k": null,
+        "min_p": null,
+        "top_p": 0.95,
+        "truncate_prompt": null,
+        "cache_implementation": null,
+        "response_format": null
+      },
+      "system_prompt": null,
+      "cache_dir": "~/.cache/huggingface/lighteval",
+      "tokenizer": null,
+      "revision": "main",
+      "dtype": "bfloat16",
+      "tensor_parallel_size": 4,
+      "data_parallel_size": 1,
+      "pipeline_parallel_size": 1,
+      "gpu_memory_utilization": 0.9,
+      "enable_prefix_caching": null,
+      "max_model_length": 16384,
+      "quantization": null,
+      "load_format": null,
+      "swap_space": 4,
+      "seed": 1234,
+      "trust_remote_code": false,
+      "add_special_tokens": true,
+      "multichoice_continuations_start_space": true,
+      "pairwise_tokenization": false,
+      "max_num_seqs": 128,
+      "max_num_batched_tokens": 2048,
+      "subfolder": null,
+      "is_async": false,
+      "override_chat_template": null
+    },
+    "model_name": "/root/Saturn-code/models/DeepSeek-R1-Distill-Qwen-7B"
+  },
+  "results": {
+    "aime25|0": {
+      "pass@k:k=1&n=1": 0.4,
+      "pass@k:k=1&n=1_stderr": 0.09097176522946843,
+      "avg@n:n=1": 0.4,
+      "avg@n:n=1_stderr": 0.09097176522946843
+    },
+    "all": {
+      "pass@k:k=1&n=1": 0.4,
+      "pass@k:k=1&n=1_stderr": 0.09097176522946843,
+      "avg@n:n=1": 0.4,
+      "avg@n:n=1_stderr": 0.09097176522946843
+    }
+  },
+  "versions": {},
+  "config_tasks": {
+    "aime25|0": {
+      "name": "aime25",
+      "prompt_function": "aime_prompt",
+      "hf_repo": "yentinglin/aime_2025",
+      "hf_subset": "default",
+      "metrics": [
+        {
+          "metric_name": "pass@k:k=1&n=1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "PassAtK(normalize=None, strip_strings=True, compute_score=compute, type_exact_match=None, k=1, n=1, attribute_must_be_set=['k'])",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "avg@n:n=1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "AvgAtN(normalize=None, strip_strings=False, compute_score=compute, type_exact_match=None, n=1, attribute_must_be_set=['n'])",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        }
+      ],
+      "solver": [
+        "solve",
+        "solve"
+      ],
+      "scorer": "score",
+      "sample_fields": "record_to_sample",
+      "sample_to_fewshot": null,
+      "filter": null,
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "train"
+      ],
+      "evaluation_splits": [
+        "train"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": null,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "original_num_docs": -1,
+      "effective_num_docs": -1,
+      "must_remove_duplicate_docs": false,
+      "num_fewshots": 0,
+      "version": 2
+    }
+  },
+  "summary_tasks": {
+    "aime25|0": {
+      "hashes": {
+        "hash_examples": "8df1bb48b826e206",
+        "hash_full_prompts": "ef46db3751d8e999",
+        "hash_input_tokens": "ff679bbed18ae1c5",
+        "hash_cont_tokens": "95bbf27e8189bceb"
+      },
+      "truncated": 0,
+      "non_truncated": 0,
+      "padded": 0,
+      "non_padded": 0
+    }
+  },
+  "summary_general": {
+    "hashes": {
+      "hash_examples": "2011297d2e3a3d16",
+      "hash_full_prompts": "c166e5d20ad58f4e",
+      "hash_input_tokens": "1e18f55952070d20",
+      "hash_cont_tokens": "9cce0924711a1029"
+    },
+    "truncated": 0,
+    "non_truncated": 0,
+    "padded": 0,
+    "non_padded": 0
+  }
+}
